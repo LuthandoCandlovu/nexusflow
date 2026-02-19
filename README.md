@@ -28,22 +28,20 @@
 
 ## 📱 App Preview
 
-> **Add your screenshots** by dragging images into a GitHub Issue, then pasting the links below.
-
 <div align="center">
 <table>
-<tr>
-<td align="center"><b>🔐 Login</b></td>
-<td align="center"><b>📊 Dashboard</b></td>
-<td align="center"><b>💬 Chat</b></td>
-<td align="center"><b>👤 Profile</b></td>
-</tr>
-<tr>
-<td><img src="https://via.placeholder.com/200x420/0D1226/4361EE?text=Login+Screen" width="200" style="border-radius:16px"/></td>
-<td><img src="https://via.placeholder.com/200x420/0D1226/4CC9F0?text=Dashboard" width="200" style="border-radius:16px"/></td>
-<td><img src="https://via.placeholder.com/200x420/0D1226/F72585?text=Chat+Screen" width="200" style="border-radius:16px"/></td>
-<td><img src="https://via.placeholder.com/200x420/0D1226/06D6A0?text=Profile" width="200" style="border-radius:16px"/></td>
-</tr>
+  <tr>
+    <td align="center"><b>🔐 Login Screen</b></td>
+    <td align="center"><b>📊 Dashboard</b></td>
+    <td align="center"><b>💬 Chat Screen</b></td>
+    <td align="center"><b>👤 Profile</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/bf3639b6-f899-4fa7-aa41-3e8288d9529b" width="200" style="border-radius:16px"/></td>
+    <td><img src="https://github.com/user-attachments/assets/765bc3cd-27a6-4e96-bee0-1f3f7340dfe2" width="200" style="border-radius:16px"/></td>
+    <td><img src="https://github.com/user-attachments/assets/97e1c91b-d43a-4c30-bbc6-729c9c7f93eb" width="200" style="border-radius:16px"/></td>
+    <td><img src="https://github.com/user-attachments/assets/65e12cc2-867c-4cac-9ea1-6e5c514de72b" width="200" style="border-radius:16px"/></td>
+  </tr>
 </table>
 </div>
 
@@ -178,10 +176,10 @@ const COLORS = {
 | 🔐 Security | 💬 Communication | 📊 Management | 🎯 UX |
 |------------|-----------------|---------------|-------|
 | Biometric Login | Real-time Chat | Team Dashboard | Haptic Feedback |
-| Two-Factor Auth | Message History | Role-Based Access | Pull to Refresh |
-| POPIA Compliant | Notifications | Activity Logs | Dark / Light Mode |
-| Encrypted Storage | File Sharing | Analytics | Smooth Animations |
-| Session Management | Read Receipts | Task Tracking | Loading States |
+| Two-Factor Auth | Message Reactions | Role-Based Access | Pull to Refresh |
+| POPIA Compliant | Reply to Messages | Activity Logs | Dark / Light Mode |
+| Encrypted Storage | File Sharing | Meeting Scheduler | Smooth Animations |
+| Session Management | Online Indicators | Task Tracking | Loading States |
 
 </div>
 
