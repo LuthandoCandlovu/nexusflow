@@ -1,0 +1,315 @@
+﻿import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
+import { BRAND } from './NexusBrand';
+
+// ============================================
+// NEXUSFLOW - PREMIUM ICON LIBRARY
+// ============================================
+
+export const NexusIcons = {
+  // Tab Bar Icons - Nexus Style
+  home: ({ focused, color, size }) => ({
+    name: focused ? 'home' : 'home-outline',
+    color: focused ? BRAND.colors.primary : color,
+  }),
+  
+  dashboard: ({ focused, color, size }) => ({
+    name: focused ? 'stats-chart' : 'stats-chart-outline',
+    color: focused ? BRAND.colors.primary : color,
+  }),
+  
+  chat: ({ focused, color, size }) => ({
+    name: focused ? 'chatbubbles' : 'chatbubbles-outline',
+    color: focused ? BRAND.colors.primary : color,
+  }),
+  
+  profile: ({ focused, color, size }) => ({
+    name: focused ? 'person-circle' : 'person-circle-outline',
+    color: focused ? BRAND.colors.primary : color,
+  }),
+
+  teams: ({ focused, color, size }) => ({
+    name: focused ? 'people' : 'people-outline',
+    color: focused ? BRAND.colors.primary : color,
+  }),
+
+  // Navigation Icons
+  back: ({ color = BRAND.colors.dark, size = 24 }) => ({
+    name: 'chevron-back-circle',
+    color,
+    size,
+  }),
+  
+  close: ({ color = BRAND.colors.dark, size = 24 }) => ({
+    name: 'close-circle',
+    color,
+    size,
+  }),
+  
+  menu: ({ color = BRAND.colors.dark, size = 24 }) => ({
+    name: 'menu',
+    color,
+    size,
+  }),
+
+  // Action Icons - Nexus Branded
+  send: ({ color = BRAND.colors.primary, size = 24 }) => ({
+    name: 'paper-plane',
+    color,
+    size,
+  }),
+  
+  attach: ({ color = BRAND.colors.accent, size = 24 }) => ({
+    name: 'attach',
+    color,
+    size,
+  }),
+  
+  emoji: ({ color = BRAND.colors.gray, size = 24 }) => ({
+    name: 'happy',
+    color,
+    size,
+  }),
+  
+  microphone: ({ color = BRAND.colors.secondary, size = 24 }) => ({
+    name: 'mic',
+    color,
+    size,
+  }),
+  
+  camera: ({ color = BRAND.colors.accent, size = 24 }) => ({
+    name: 'camera',
+    color,
+    size,
+  }),
+  
+  image: ({ color = BRAND.colors.success, size = 24 }) => ({
+    name: 'image',
+    color,
+    size,
+  }),
+  
+  file: ({ color = BRAND.colors.warning, size = 24 }) => ({
+    name: 'document',
+    color,
+    size,
+  }),
+
+  // Status Icons
+  success: ({ size = 24 }) => ({
+    name: 'checkmark-circle',
+    color: BRAND.colors.success,
+    size,
+  }),
+  
+  error: ({ size = 24 }) => ({
+    name: 'alert-circle',
+    color: BRAND.colors.error,
+    size,
+  }),
+  
+  warning: ({ size = 24 }) => ({
+    name: 'warning',
+    color: BRAND.colors.warning,
+    size,
+  }),
+  
+  info: ({ size = 24 }) => ({
+    name: 'information-circle',
+    color: BRAND.colors.primary,
+    size,
+  }),
+
+  // Security Icons
+  fingerprint: ({ color = BRAND.colors.primary, size = 24 }) => ({
+    name: 'finger-print',
+    color,
+    size,
+  }),
+  
+  faceid: ({ color = BRAND.colors.primary, size = 24 }) => ({
+    name: 'scan-circle',
+    color,
+    size,
+  }),
+  
+  lock: ({ color = BRAND.colors.primary, size = 24 }) => ({
+    name: 'lock-closed',
+    color,
+    size,
+  }),
+  
+  unlock: ({ color = BRAND.colors.success, size = 24 }) => ({
+    name: 'lock-open',
+    color,
+    size,
+  }),
+  
+  shield: ({ color = BRAND.colors.primary, size = 24 }) => ({
+    name: 'shield',
+    color,
+    size,
+  }),
+
+  // Business Icons
+  analytics: ({ color = BRAND.colors.primary, size = 24 }) => ({
+    name: 'bar-chart',
+    color,
+    size,
+  }),
+  
+  report: ({ color = BRAND.colors.primary, size = 24 }) => ({
+    name: 'document-text',
+    color,
+    size,
+  }),
+  
+  calendar: ({ color = BRAND.colors.secondary, size = 24 }) => ({
+    name: 'calendar',
+    color,
+    size,
+  }),
+  
+  task: ({ color = BRAND.colors.accent, size = 24 }) => ({
+    name: 'checkbox',
+    color,
+    size,
+  }),
+  
+  project: ({ color = BRAND.colors.success, size = 24 }) => ({
+    name: 'folder',
+    color,
+    size,
+  }),
+
+  // Notification Icons
+  notification: ({ color = BRAND.colors.gray, size = 24 }) => ({
+    name: 'notifications',
+    color,
+    size,
+  }),
+  
+  alert: ({ color = BRAND.colors.error, size = 24 }) => ({
+    name: 'notifications-circle',
+    color,
+    size,
+  }),
+
+  // Settings Icons
+  settings: ({ color = BRAND.colors.gray, size = 24 }) => ({
+    name: 'settings',
+    color,
+    size,
+  }),
+  
+  language: ({ color = BRAND.colors.gray, size = 24 }) => ({
+    name: 'language',
+    color,
+    size,
+  }),
+  
+  theme: ({ color = BRAND.colors.gray, size = 24 }) => ({
+    name: 'color-palette',
+    color,
+    size,
+  }),
+  
+  logout: ({ color = BRAND.colors.error, size = 24 }) => ({
+    name: 'log-out',
+    color,
+    size,
+  }),
+
+  // Social Icons
+  google: ({ size = 24 }) => ({
+    name: 'logo-google',
+    color: '#DB4437',
+    size,
+  }),
+  
+  microsoft: ({ size = 24 }) => ({
+    name: 'logo-microsoft',
+    color: '#00A4EF',
+    size,
+  }),
+  
+  apple: ({ size = 24 }) => ({
+    name: 'logo-apple',
+    color: '#000000',
+    size,
+  }),
+  
+  slack: ({ size = 24 }) => ({
+    name: 'logo-slack',
+    color: '#4A154B',
+    size,
+  }),
+
+  // Nexus Special Icons
+  nexus: ({ color = BRAND.colors.primary, size = 24 }) => ({
+    name: 'git-network',
+    color,
+    size,
+  }),
+  
+  connect: ({ color = BRAND.colors.primary, size = 24 }) => ({
+    name: 'swap-horizontal',
+    color,
+    size,
+  }),
+  
+  collaborate: ({ color = BRAND.colors.secondary, size = 24 }) => ({
+    name: 'people-circle',
+    color,
+    size,
+  }),
+  
+  accelerate: ({ color = BRAND.colors.accent, size = 24 }) => ({
+    name: 'rocket',
+    color,
+    size,
+  }),
+};
+
+// ============================================
+// NEXUSFLOW - CUSTOM ICON COMPONENT
+// ============================================
+export const NexusIcon = ({ name, focused, color, size = 24, ...props }) => {
+  // Get icon config from NexusIcons
+  const iconConfig = typeof NexusIcons[name] === 'function' 
+    ? NexusIcons[name]({ focused, color, size })
+    : { name, color, size };
+  
+  return (
+    <Ionicons 
+      name={iconConfig.name} 
+      size={iconConfig.size || size} 
+      color={iconConfig.color || color || BRAND.colors.primary} 
+      {...props} 
+    />
+  );
+};
+
+// ============================================
+// NEXUSFLOW - PREMIUM FEATURE BADGES
+// ============================================
+export const NexusBadge = ({ type, size = 16 }) => {
+  const badges = {
+    enterprise: { icon: 'business', color: BRAND.colors.primary },
+    security: { icon: 'shield', color: BRAND.colors.success },
+    ai: { icon: 'flash', color: BRAND.colors.secondary },
+    beta: { icon: 'flask', color: BRAND.colors.accent },
+    pro: { icon: 'star', color: BRAND.colors.warning },
+    new: { icon: 'sparkles', color: BRAND.colors.secondary },
+  };
+
+  const badge = badges[type] || badges.enterprise;
+
+  return (
+    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      <Ionicons name={badge.icon} size={size} color={badge.color} />
+    </View>
+  );
+};
+
+export default NexusIcon;

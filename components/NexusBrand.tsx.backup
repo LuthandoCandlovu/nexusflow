@@ -1,0 +1,287 @@
+﻿import React from 'react';
+import { View, Text, StyleSheet, Image } from 'react-native';
+import Svg, { Circle, Path, Rect, G, LinearGradient, Stop, Defs } from 'react-native-svg';
+
+// ============================================
+// NEXUSFLOW - PROFESSIONAL BRAND IDENTITY
+// ============================================
+
+export const BRAND = {
+  name: "NEXUSFLOW",
+  tagline: "Connect. Collaborate. Accelerate.",
+  colors: {
+    primary: '#4361EE',     // Vivid Blue - Trust & Innovation
+    secondary: '#F72585',   // Vibrant Pink - Energy & Creativity
+    accent: '#4CC9F0',      // Light Blue - Clarity & Communication
+    success: '#06D6A0',     // Mint Green - Growth
+    warning: '#FFB703',     // Amber - Attention
+    error: '#E63946',       // Red - Urgency
+    dark: '#1E1E2E',       // Deep Navy - Premium
+    light: '#F8F9FF',      // Soft White - Clean
+    gray: '#6C757D',       // Neutral Gray
+  },
+  gradients: {
+    primary: ['#4361EE', '#3A0CA3'],
+    secondary: ['#F72585', '#B5179E'],
+    accent: ['#4CC9F0', '#4895EF'],
+  }
+};
+
+// ============================================
+// LOGO 1: NEXUSFLOW FULL LOGO WITH ICON
+// ============================================
+export const NexusFlowLogo = ({ size = 60, showTagline = true }) => {
+  const iconSize = size * 0.7;
+  const fontSize = size * 0.35;
+  const taglineSize = size * 0.14;
+
+  return (
+    <View style={styles.container}>
+      <View style={[styles.logoRow, { marginBottom: showTagline ? 8 : 0 }]}>
+        {/* Nexus Icon - Interconnected Circles */}
+        <Svg width={iconSize} height={iconSize} viewBox="0 0 100 100">
+          <Defs>
+            <LinearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <Stop offset="0%" stopColor={BRAND.colors.primary} />
+              <Stop offset="100%" stopColor={BRAND.colors.accent} />
+            </LinearGradient>
+          </Defs>
+          
+          {/* Background Circle */}
+          <Circle cx="50" cy="50" r="45" fill="url(#primaryGradient)" opacity="0.1" />
+          
+          {/* Interconnected Nodes */}
+          <Circle cx="35" cy="35" r="12" fill={BRAND.colors.primary} />
+          <Circle cx="65" cy="35" r="12" fill={BRAND.colors.secondary} />
+          <Circle cx="50" cy="65" r="12" fill={BRAND.colors.accent} />
+          
+          {/* Connection Lines */}
+          <Path d="M35 35 L65 35" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+          <Path d="M35 35 L50 65" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+          <Path d="M65 35 L50 65" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+          
+          {/* Center Node */}
+          <Circle cx="50" cy="50" r="6" fill="#fff" />
+        </Svg>
+        
+        {/* Company Name */}
+        <View style={styles.textContainer}>
+          <Text style={[styles.companyName, { 
+            fontSize: fontSize,
+            color: BRAND.colors.dark
+          }]}>
+            NEXUS
+            <Text style={{ color: BRAND.colors.primary }}>FLOW</Text>
+          </Text>
+        </View>
+      </View>
+      
+      {/* Tagline */}
+      {showTagline && (
+        <Text style={[styles.tagline, { 
+          fontSize: taglineSize,
+          color: BRAND.colors.gray
+        }]}>
+          {BRAND.tagline}
+        </Text>
+      )}
+    </View>
+  );
+};
+
+// ============================================
+// LOGO 2: NEXUSFLOW ICON ONLY (For Profile, Header)
+// ============================================
+export const NexusIcon = ({ size = 50, color = BRAND.colors.primary }) => (
+  <Svg width={size} height={size} viewBox="0 0 100 100">
+    <Defs>
+      <LinearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <Stop offset="0%" stopColor={BRAND.colors.primary} />
+        <Stop offset="100%" stopColor={BRAND.colors.accent} />
+      </LinearGradient>
+    </Defs>
+    
+    {/* Premium Shield Background */}
+    <Circle cx="50" cy="50" r="45" fill="url(#iconGradient)" opacity="0.15" />
+    <Circle cx="50" cy="50" r="38" fill="url(#iconGradient)" opacity="0.2" />
+    
+    {/* Nexus Symbol */}
+    <Circle cx="35" cy="35" r="10" fill={BRAND.colors.primary} />
+    <Circle cx="65" cy="35" r="10" fill={BRAND.colors.secondary} />
+    <Circle cx="50" cy="65" r="10" fill={BRAND.colors.accent} />
+    <Path d="M35 35 L65 35 M35 35 L50 65 M65 35 L50 65" stroke="#fff" strokeWidth="4" strokeLinecap="round" />
+    <Circle cx="50" cy="50" r="6" fill="#fff" />
+  </Svg>
+);
+
+// ============================================
+// LOGO 3: NEXUSFLOW WORDMARK (Text Only)
+// ============================================
+export const NexusWordmark = ({ size = 40, color = BRAND.colors.dark }) => (
+  <View style={{ flexDirection: 'row', alignItems: 'baseline' }}>
+    <Text style={[styles.wordmark, { 
+      fontSize: size * 0.7,
+      color: color,
+      fontWeight: '700'
+    }]}>
+      NEXUS
+    </Text>
+    <Text style={[styles.wordmark, { 
+      fontSize: size * 0.7,
+      color: BRAND.colors.primary,
+      fontWeight: '800'
+    }]}>
+      FLOW
+    </Text>
+  </View>
+);
+
+// ============================================
+// LOGO 4: NEXUSFLOW LOADING/SPLASH ANIMATION
+// ============================================
+export const NexusLoading = ({ size = 80 }) => (
+  <View style={styles.loadingContainer}>
+    <Svg width={size} height={size} viewBox="0 0 100 100">
+      {/* Animated Circles */}
+      <Circle cx="35" cy="35" r="12" fill={BRAND.colors.primary} opacity="0.9" />
+      <Circle cx="65" cy="35" r="12" fill={BRAND.colors.secondary} opacity="0.9" />
+      <Circle cx="50" cy="65" r="12" fill={BRAND.colors.accent} opacity="0.9" />
+      <Path d="M35 35 L65 35 M35 35 L50 65 M65 35 L50 65" stroke="#fff" strokeWidth="4" />
+    </Svg>
+    <Text style={styles.loadingText}>NEXUSFLOW</Text>
+  </View>
+);
+
+// ============================================
+// BRANDED BUTTON COMPONENTS
+// ============================================
+export const NexusButton = ({ 
+  title, 
+  onPress, 
+  type = 'primary',
+  size = 'medium',
+  disabled = false,
+  icon = null
+}) => {
+  const getButtonStyle = () => {
+    const baseStyle = {
+      primary: {
+        backgroundColor: BRAND.colors.primary,
+        borderColor: 'transparent',
+        textColor: '#fff',
+      },
+      secondary: {
+        backgroundColor: BRAND.colors.secondary,
+        borderColor: 'transparent',
+        textColor: '#fff',
+      },
+      outline: {
+        backgroundColor: 'transparent',
+        borderColor: BRAND.colors.primary,
+        textColor: BRAND.colors.primary,
+      },
+      ghost: {
+        backgroundColor: 'transparent',
+        borderColor: 'transparent',
+        textColor: BRAND.colors.primary,
+      }
+    };
+    return baseStyle[type] || baseStyle.primary;
+  };
+
+  const getSizeStyle = () => {
+    const sizes = {
+      small: { padding: 8, fontSize: 14, iconSize: 16 },
+      medium: { padding: 12, fontSize: 16, iconSize: 20 },
+      large: { padding: 16, fontSize: 18, iconSize: 24 },
+    };
+    return sizes[size] || sizes.medium;
+  };
+
+  const buttonStyle = getButtonStyle();
+  const sizeStyle = getSizeStyle();
+
+  return (
+    <TouchableOpacity
+      style={[
+        styles.button,
+        {
+          backgroundColor: buttonStyle.backgroundColor,
+          borderColor: buttonStyle.borderColor,
+          paddingVertical: sizeStyle.padding,
+          paddingHorizontal: sizeStyle.padding * 2,
+          opacity: disabled ? 0.6 : 1,
+        }
+      ]}
+      onPress={onPress}
+      disabled={disabled}
+    >
+      {icon && <View style={{ marginRight: 8 }}>{icon}</View>}
+      <Text style={[styles.buttonText, { 
+        color: buttonStyle.textColor,
+        fontSize: sizeStyle.fontSize
+      }]}>
+        {title}
+      </Text>
+    </TouchableOpacity>
+  );
+};
+
+// ============================================
+// STYLES
+// ============================================
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  logoRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  textContainer: {
+    marginLeft: 12,
+  },
+  companyName: {
+    fontWeight: '800',
+    letterSpacing: 1,
+  },
+  tagline: {
+    fontWeight: '500',
+    letterSpacing: 1,
+    textTransform: 'uppercase',
+  },
+  wordmark: {
+    letterSpacing: 1,
+  },
+  loadingContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  loadingText: {
+    marginTop: 16,
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: BRAND.colors.primary,
+    letterSpacing: 2,
+  },
+  button: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 30,
+    borderWidth: 2,
+  },
+  buttonText: {
+    fontWeight: '600',
+  },
+});
+
+export default {
+  BRAND,
+  NexusFlowLogo,
+  NexusIcon,
+  NexusWordmark,
+  NexusLoading,
+  NexusButton,
+};
