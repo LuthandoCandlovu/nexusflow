@@ -1,50 +1,105 @@
-# Welcome to your Expo app 👋
+﻿# NexusFlow Enterprise 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A professional enterprise communication and team management platform built with React Native Expo.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+### 🔐 Authentication
+- Email/Password login with validation
+- Biometric authentication (Face ID / Fingerprint)
+- Remember me functionality
+- POPIA compliance (South Africa's privacy law)
+- Multi-language support (6 languages)
 
-   ```bash
-   npm install
-   ```
+### 💬 Team Communication
+- Real-time messaging between team members
+- Message reactions (👍, 👋, etc.)
+- Reply to specific messages
+- File attachments (images, PDFs, documents)
+- Online user indicators
+- Typing indicators
 
-2. Start the app
+### 📊 Team Management
+- Live analytics dashboard
+- Team member invitations with role selection
+- Quick actions (Invite, Chat, Schedule, Reports, Upload)
+- Recent activity feed
+- Meeting scheduler
+- Storage usage tracker
+- Notification center with unread badges
 
-   ```bash
-   npx expo start
-   ```
+### 👤 User Profile
+- Personal information management
+- Dark mode toggle
+- Notification preferences
+- Biometric login settings
+- Two-factor authentication
+- Password change
+- Secure logout
 
-In the output, you'll find options to open the app in a
+## 🛠️ Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **React Native** + **Expo** - Mobile app framework
+- **Expo Router** - Navigation between screens
+- **AsyncStorage** - Local data storage
+- **Haptics** - Vibration feedback
+- **LocalAuthentication** - Biometric login
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📱 Screenshots
 
-## Get a fresh project
+*[Add screenshots of your app here]*
 
-When you're ready, run:
+## 🚀 Getting Started
 
-```bash
-npm run reset-project
-```
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- Expo Go app on your phone (optional)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Installation
 
-## Learn more
+1. Clone the repository
+\\\ash
+git clone https://github.com/YOUR_USERNAME/nexusflow.git
+cd nexusflow
+\\\
 
-To learn more about developing your project with Expo, look at the following resources:
+2. Install dependencies
+\\\ash
+npm install
+\\\
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. Start the app
+\\\ash
+npx expo start
+\\\
 
-## Join the community
+4. Scan QR code with Expo Go app or press:
+   -  for Android emulator
+   - i for iOS simulator
+   - w for web browser
 
-Join our community of developers creating universal apps.
+## 🔑 Demo Credentials
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | admin@nexusflow.com | Admin123! |
+| User | user@nexusflow.com | User123! |
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👨‍💻 Developer
+
+**Khalil Developer**
+- Clean and Neat UI in React Native
+- #coding #programming #reactnative
+
+## 📞 Contact
+
+For enterprise inquiries: sales@nexusflow.com
+
+---
+
+© 2026 NexusFlow Technologies. All rights reserved. SOC2 Type II • POPIA Compliant
